@@ -12,7 +12,7 @@ public class StreetDTO {
     private String name;
     private String description;
     private Date inauguratedAt;
-    private int status; //1 in-use 2// under-construction 3//fixing
+    private int status;
     private int districtId;
     public StreetDTO(Street street) {
         this.id = street.getId();

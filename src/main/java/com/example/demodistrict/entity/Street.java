@@ -21,7 +21,7 @@ public class Street {
     private String description;
     private Date inauguratedAt;
     private int status;
-    
+
     @ManyToOne(fetch = FetchType.LAZY, cascade = {CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
     @JoinColumn(name = "districtId")
     private District district;
